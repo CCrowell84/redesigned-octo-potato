@@ -18,7 +18,7 @@ weatherForm.addEventListener('submit', (e) => {
             messageTwo.textContent = '';
         } else {
             messageOne.textContent = 'Weather for ' + data.location;
-            messageTwo.textContent = 'Current temp: ' + data.forecast.temp + '. Chance of rain: ' + data.forecast.precipProb+ '. Forecast: '+ data.forecast.summary;
+            messageTwo.textContent = data.forecast;
         }
     })
 })
